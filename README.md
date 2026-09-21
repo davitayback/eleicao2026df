@@ -188,8 +188,6 @@ A lista abaixo combina a média geral com a lógica proporcional. Os 24 nomes ma
 
 ---
 
-
-
 # 🗳️ DF 2026 - Ranking Consolidado Distrital
 
 > Pesquisa P1 a P5 | Votos Eq. calculados sobre base de 1,69M válidos | 157 nomes mapeados
@@ -204,91 +202,6 @@ A lista abaixo combina a média geral com a lógica proporcional. Os 24 nomes ma
 `✅ Deferido` | `⚠️ Deferido c/ rec.` | `❌ Indeferido`
 `🟢 75-90%` = Eleito | `🟡 20-58%` = Briga direta | `🔴 1-18%` = Baixa | `⚫ Inapto`
 
----
-
-### 🏆 TOP 25 - Viáveis
-
-| Pos. | Candidato | Partido | Número | Média | Votos Eq. | Prob. |
-|:---:|---|:---:|---:|---:|---:|---|
-| 1 | **Chico Vigilante** | PT | `13100` | **4,02%** | 67.938 | 🟢 75-90% |
-| 2 | **Joaquim Roriz Neto** | PL | `22000` | **3,90%** | 65.910 | 🟢 75-90% |
-| 3 | **Jaqueline Silva** | MDB | `15900` | **3,36%** | 56.784 | 🟡 65-82% |
-| 4 | **Delegado Fernando** | REPUBLICANOS | `10190` | **2,98%** | 50.362 | 🟡 58-75% |
-| 5 | **Pepa** | PP | `11011` | **2,94%** | 49.686 | 🟡 58-75% |
-| 6 | **Pastor Daniel de Castro** | PP | `11133` | **2,92%** | 49.348 | 🟡 58-75% |
-| 7 | **Martins Machado** | REPUBLICANOS | `10123` | **2,54%** | 42.926 | 🟡 50-70% |
-| 8 | **Max Maciel** | PSOL | `50100` | **2,46%** | 41.574 | 🟡 50-70% |
-| 9 | **Eduardo Pedrosa** | UNIÃO | `44000` | **2,28%** | 38.532 | 🟡 40-60% |
-| 10 | **Delmasso** | REPUBLICANOS | `10456` | **2,24%** | 37.856 | 🟡 40-60% |
-| 11 | Wellington Luiz | MDB | `15123` | 2,12% | 35.828 | 🟡 38-58% |
-| 12 | Robério Negreiros | PODE | `20000` | 2,02% | 34.138 | 🟡 35-55% |
-| 13 | Renata Daguiar | REPUBLICANOS | `10789` | 1,84% | 31.096 | 🟡 30-50% |
-| 14 | João Cardoso | PL | `22888` | 1,76% | 29.744 | 🔴 28-48% |
-| 15 | Ricardo Vale | PT | `13013` | 1,70% | 28.730 | 🔴 28-48% |
-| 16 | André Kubitschek | PL | `22022` | 1,68% | 28.392 | 🔴 25-45% |
-| 17 | Bispo Renato Andrade | REPUBLICANOS | `10100` | 1,62% | 27.378 | 🔴 25-45% |
-| 18 | Hermeto | MDB | `15190` | 1,54% | 26.026 | 🔴 22-42% |
-| 19 | Rôney Nemer | PP | `11111` | 1,36% | 22.984 | 🔴 20-38% |
-| 20 | Rogério Morro da Cruz | PSD | `55123` | 1,14% | 19.266 | 🔴 45-65% |
-| 21 | Iolando | MDB | `15000` | 1,12% | 18.928 | 🔴 18-35% |
-| 22 | Jorge Vianna | DEMOCRATA | `35192` | 1,06% | 17.914 | 🔴 18-35% |
-| 23 | **Rogério Ulysses** | **AVANTE** | `70321` | **0,98%** | 16.562 | 🟡 68-82% |
-| 24 | Raad | MOBILIZA | `33100` | 0,98% | 16.562 | 🔴 15-30% |
-| 25 | Gabriel Magno | PT | `13131` | 0,82% | 13.858 | 🔴 12-28% |
-
-
----
-<!--
-#######################################################################
-###  ELEIÇÕES 2026 – DISTRITO FEDERAL · INTENÇÃO DE VOTO DISTRITAL  ###
-###  Cinco pesquisas IGAPE (P1 a P5) consolidadas                  ###
-#######################################################################
--->
-# Projeção
-
-
-### 3. As 24 Cadeiras Preenchidas (Com as Bolinhas e Confrontos Reais)
-
-Eliminando os candidatos que **não atingem o corte individual de 14.083 votos (20% do QE)**, as vagas de 21 a 24 deixam de ser ocupadas por segundas opções inexpressivas de partidos médios e passam a ser disputadas onde realmente há **voto individual acima de 14 mil**.
-
-| Cadeira | Partido | Status | Titular Projetado | Votos Estimados | Diagnóstico & Quem Dança com mais de 14k votos |
-|:---:|:---:|:---:|---|:---:|---|
-| **01** | **PT** | 🟢 Consolidada | **Chico Vigilante** | ~68.000 | 1º colocado geral; vaga direta incontestável. |
-| **02** | **PL** | 🟢 Consolidada | **Joaquim Roriz Neto** | ~66.000 | Puxador da chapa do PL; vaga direta assegurada. |
-| **03** | **MDB** | 🟢 Consolidada | **Jaqueline Silva** | ~57.000 | Cabeça de chapa do MDB; 1ª cadeira com folga. |
-| **04** | **REP** | 🟢 Consolidada | **Del. Fernando Fernandes** | ~50.000 | Mais votado do Republicanos; vaga direta. |
-| **05** | **PP** | 🟢 Consolidada | **Pepa** | ~50.000 | Empate técnico no topo do PP; vaga direta garantida. |
-| **06** | **PP** | 🟢 Consolidada | **Pastor Daniel de Castro** | ~49.000 | 2ª vaga direta do PP assegurada pelo quociente do bloco. |
-| **07** | **REP** | 🟢 Consolidada | **Martins Machado** | ~43.000 | 2ª vaga direta do Republicanos; forte voto de igreja. |
-| **08** | **PSOL** | 🟢 Consolidada | **Max Maciel** | ~42.000 | Concentra a votação da esquerda jovem/periferia; cadeira direta. |
-| **09** | **UNIÃO** | 🟢 Consolidada | **Eduardo Pedrosa** | ~39.000 | Lidera com folga o União Brasil; 1ª cadeira direta. |
-| **10** | **REP** | 🟢 Consolidada | **Delmasso** | ~38.000 | 3ª vaga do Republicanos. **Fecha o teto do partido**. |
-| **11** | **MDB** | 🟢 Consolidada | **Wellington Luiz** | ~36.000 | Em alta nas pesquisas; fecha a 2ª vaga direta do MDB. |
-| **12** | **PODE** | 🟢 Consolidada | **Robério Negreiros** | ~34.000 | Puxa a legenda do Podemos e assegura a cadeira própria. |
-| **13** | **PL** | 🟢 Consolidada | **João Cardoso** | ~30.000 | 2ª vaga do PL conquistada com a soma da chapa. |
-| **14** | **PT** | 🟢 Consolidada | **Ricardo Vale** | ~29.000 | 2ª cadeira da Federação PT/PV/PCdoB. |
-| **15** | **PSD** | 🟢 Consolidada | **Rogério Morro da Cruz** | ~19.000 | **Chapa bate o QE:** É o único da nominata acima de 14k; entra direto. |
-| **16** | **DEM** | 🟢 Consolidada | **Jorge Vianna** | ~18.000 | **Chapa bate o QE:** Puxa a saúde, passa de 14k e leva a vaga única da sigla. |
-| **17** | **AVANTE** | 🟢 Consolidada | **Rogério Ulysses** | ~17.000 | **Chapa bate o QE:** Chapa bate 71k; Rogério é o único com >14k e leva. |
-| **18** | **MOBILIZA** | 🟢 Consolidada | **Raad Massouh** | ~17.000 | **Chapa bate o QE:** Chapa bate 71k; Raad passa de 14k e entra direto. |
-| **19** | **PL** | 🟡 Sobra Provável | **André Kubitschek** | ~28.000 | O PL bate sobra limpa e eleva André à 3ª cadeira da sigla. |
-| **20** | **PP** | 🟡 Sobra Provável | **Rôney Nemer** | ~23.000 | Passa dos 14k e disputa a sobra da 3ª vaga do PP com média alta. |
-| **21** | **SOBRA 1** | 🟡 Disputa Real | **1. Renata Daguiar** (REP — ~31k)<br>ou **2. Hermeto** (MDB — ~26k) | Briga direta de sobra entre a 4ª média do Republicanos e a 3ª do MDB. Quem tiver maior coeficiente partidário leva; o outro **dança**. |
-| **22** | **SOBRA 2** | 🟡 Disputa Real | **1. Hermeto** (MDB — ~26k)<br>ou **2. Bispo Renato** (REP — ~27k) | Se o Republicanos não levar 4, a sobra cai para o MDB de Hermeto; Bispo Renato corre por fora precisando de um milagre na legenda. |
-| **23** | **SOBRA 3** | 🟡 Disputa Real | **1. Iolando** (MDB — ~19k)<br>ou **2. Gabriel Magno** (PT — ~14k) | **Disputa no limite do corte:** Iolando tenta puxar uma improvável 3ª/4ª vaga do MDB contra Gabriel Magno (que precisa bater os 14,1k de piso). |
-| **24** | **SOBRA 4** | 🟡 Disputa Real | **1. Gabriel Magno** (PT — ~14k)<br>ou **2. Renata Daguiar / Hermeto** (Repescagem) | A última sobra fica entre a 3ª cadeira da federação de esquerda (se Gabriel atingir os 14.083 votos nominais) ou a sobra residual dos grandes (REP/MDB). |
-
----
-
-### 🚨 Diagnóstico Definitivo dos que Realmente Podem Dançar
-
-1. **Daniel Radar, Del. Laércio, Pablo Aguiar e Léo Goleiro:** **Não entram.** Eles têm projeção de 4 a 7 mil votos. A regra de sobras eleitorais exige **20% do QE (14.083 votos)**. Mesmo que Avante ou PSD tivessem votos de legenda sobrando para uma segunda vaga, esses nomes estariam legalmente impedidos de assumir por não cumprirem a cláusula de barreira individual.
-2. **A Tragédia dos 30 mil votos (Renata Daguiar e Hermeto):** Como Avante, PSD, Democrata e Mobiliza comem 4 cadeiras inteiras com seus puxadores ultrapassando o QE, sobram apenas **20 cadeiras para os blocos tradicionais**. Com isso, é matematicamente impossível o Republicanos fazer 4 ou 5 e o MDB fazer 3 ou 4. **Pelo menos dois nomes com mais de 25 mil votos (Renata Daguiar, Bispo Renato ou Hermeto) vão ficar de fora da CLDF.**
-3. **Iolando (19k) e Gabriel Magno (14k):** Estão na zona de maior perigo de todo o Distrito Federal. Precisam que a votação das suas respectivas chapas supere a barreira dos 150k/160k votos e que eles próprios não percam votos na reta final para não caírem abaixo do corte legal.
----
-
-> As probabilidades apresentadas são estimativas analíticas, calculadas a partir das médias das cinco pesquisas, desempenho recente. Deve-se levar em conta a força partidária, nominata, histórico eleitoral e possibilidade de conversão de votos em cadeiras. 
->Não representam probabilidades oficiais ou resultados garantidos.
 
 ---
 
