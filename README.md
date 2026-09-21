@@ -4,6 +4,21 @@
 
 > **Nota de transparência:** esta análise consolida os dados fornecidos das cinco pesquisas IGAPE. As estimativas de votos, cadeiras e viabilidade eleitoral são cenários analíticos. Não representam resultado oficial, garantia de eleição ou previsão institucional.
 
+
+
+> \* Projeções estatísticas. A hipótese operacional adotada é de **1.680.000 votos válidos**. Dividindo pelas **24 cadeiras**, temos **QE = 70.000**. O QE oficial somente será conhecido após a totalização dos votos.
+
+### 🎯 Cenários projetados para o QE
+
+| Cenário | Votos válidos | QE | Característica |
+|:---|---:|---:|:---|
+| 🔴 **Baixo** | ~1.598.000 | **~66.600** | Participação mais baixa |
+| 🟡 **Tendência** | ~1.638.000 | **~68.300** | Regressão histórica |
+| ⭐ **Referência** | **1.680.000** | **🎯 70.000** | **Base de trabalho** |
+| 🟠 **Média histórica** | ~1.728.000 | **~72.000** | Retorno à média |
+| 🟢 **Alta participação** | ~1.840.000 | **~76.700** | Participação elevada |
+
+
 ---
 <a id="inicio"></a>
 ## 📑 Menu de navegação
@@ -12,7 +27,6 @@
 - [Documentação das pesquisas](#documentacao-pesquisas)
 - [Metodologia estatística](#metodologia-estatistica)
 - [Parâmetros eleitorais](#parametros-eleitorais)
-- [Engenharia eleitoral da CLDF](#engenharia-eleitoral)
 - [Evolução dos principais nomes](#evolucao-principais-nomes)
 - [Projeção dos 24 nomes](#projecao-24-nomes)
 - [Ranking consolidado dos candidatos](#ranking-consolidado)
@@ -63,6 +77,7 @@
 ---
 <a id="metodologia-estatistica"></a>
 # 2. Metodologia estatística
+
 ```
 Média = (P1+P2+P3+P4+P5)/5
 Se ausente = 0,0% na média
@@ -71,30 +86,38 @@ Votos eq = média × 1.690.000 (1% = 16.900 votos)
 ---
 <a id="parametros-eleitorais"></a>
 # 3. Parâmetros eleitorais
+
+
+| Cenário | Votos válidos | QE | Característica |
+|:---|---:|---:|:---|
+| 🔴 **Baixo** | ~1.598.000 | **~66.600** | Participação mais baixa |
+| 🟡 **Tendência** | ~1.638.000 | **~68.300** | Regressão histórica |
+| ⭐ **Referência** | **1.680.000** | **🎯 70.000** | **Base de trabalho** |
+| 🟠 **Média histórica** | ~1.728.000 | **~72.000** | Retorno à média |
+| 🟢 **Alta participação** | ~1.840.000 | **~76.700** | Participação elevada |
+
 | Ref | Cálculo | Votos |
 |---|---:|---:|
 | 10% QE | 70.416×0,10 | 7.042 |
 | 20% QE | 70.416×0,20 | 14.083 |
 | 80% QE | 70.416×0,80 | 56.333 |
 | 1 QE | | 70.416 |
-
 ---
-<a id="engenharia-eleitoral"></a>
-# 4. Engenharia eleitoral realista da CLDF
-- Eleitorado 2026: 2.253.732 (+2,30% vs 2022)
-- Comparecimento: 86,12% (2006) → 84,55% (2010) → 88,33% (2014) → 81,15% (2018) → 82,04% (2022) / Regressão 80,97% = ~1.825.000
-- Válidos/Comparecimento: 92,39% → 90,86% → 91,01% → 87,36% → 92,42% / Regressão 89,78%
-- Cenários: Baixo 66.600 / Tendência 68.300 / Média Histórica 72.000 / Alta 76.700 / **Referência 70.000**
 
 ---
 <a id="evolucao-principais-nomes"></a>
-# 5. Evolução e tendências dos principais nomes
-**Wellington Luiz MDB** 0,8%→2,3%→2,3%→2,0%→3,2% Média 2,12% Var +2,4 p.p. 35.828 eq.
-**Renata Daguiar REP** 0,3%→1,4%→2,0%→2,7%→2,8% Média 1,84% Var +2,5 p.p. 31.096 eq.
-**Max Maciel PSOL** 1,5%→2,3%→2,3%→3,2%→3,0% Média 2,46% Var +1,5 p.p.
-**André Kubitschek PL** 2,9%→1,9%→1,3%→1,7%→0,6% Var -2,3 p.p. queda P5
-**João Cardoso PL** 2,3%→2,0%→2,2%→1,7%→0,6% Var -1,7 p.p.
-**Delegado Laércio AVANTE** 0,7%→0,5%→0,5%→0,2%→0,2% Var -0,5 p.p.
+# 5. Evolução de dados eleitorais no DF
+
+| 📊 Indicador | 📌 Histórico / Projeção | 🎯 Referência 2026 |
+|---|---:|---:|
+| 👥 **Eleitorado apto** | 2.203.052 → 2.253.732 | **2.253.732** |
+| 📈 **Crescimento vs. 2022** | — | **+2,30%** |
+| 🗳️ **Comparecimento histórico** | 86,12% → 84,55% → 88,33% → 81,15% → 82,04% | **~80,97%*** |
+| 👤 **Comparecimento projetado** | — | **~1.825.000** |
+| ✅ **Válidos / comparecimento** | 92,39% → 90,86% → 91,01% → 87,36% → 92,42% | **~89,78%*** |
+| 📥 **Votos válidos — hipótese** | — | **1.680.000** |
+| 🏛️ **Cadeiras CLDF** | — | **24** |
+| 🎯 **QE de trabalho** | — | **70.000** 
 
 ---
 <a id="projecao-24-nomes"></a>
@@ -765,7 +788,7 @@ Principal nome: **Deusdete Filho** com média 0,100% e 1.690 votos eq. Presente 
 ## 👤 Autor
 
 **Davi Santana**  
-*Cientista, Escritor e Analista Político.*  
+*Cientista, Escritor*  
 *Esp. Engenharia de Software - Esp. Data Science Analytics - USP*
 
  [Contato](https://instagram.com.br/davitayback)
@@ -783,4 +806,4 @@ Principal nome: **Deusdete Filho** com média 0,100% e 1.690 votos eq. Presente 
 > *Cada clique, cada dado, cada insight conta.*  
 > *Transforme informação em poder — com responsabilidade e ética.*
 
-© 2026 Davi Santana. Todos os direitos reservados. | *“Ciência aplicada, código limpo, política clara.”* | [🔝 Voltar ao Topo](#inicio)
+© 2026 Davi Santana. | *“Ciência aplicada, código limpo, política clara.”* | [🔝 Voltar ao Topo](#inicio)
