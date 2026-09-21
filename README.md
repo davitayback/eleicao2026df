@@ -1,20 +1,45 @@
-# Análise Estatística - Deputados Distritais do Distrito Federal
+# Análise Estatística — Deputados Distritais do Distrito Federal
 
-#### Consolidação das cinco pesquisas IGAPE, 10 mil pessoas entrevistadas em 5 rodadas, conforme tabela abaixo:
+#### Consolidação das cinco pesquisas IGAPE, com 10.000 entrevistas realizadas em cinco rodadas
+
+> **Nota de transparência:** esta análise consolida os dados fornecidos das cinco pesquisas IGAPE. As estimativas de votos, probabilidades e cadeiras são cenários analíticos, não resultados oficiais nem garantia de eleição.
+
+---
+
+## Sumário
+
+1. [Documentação e ficha das pesquisas](#1-documentação-e-ficha-das-pesquisas)
+2. [Metodologia estatística](#2-metodologia-estatística)
+3. [Parâmetros eleitorais de referência](#3-parâmetros-eleitorais-de-referência)
+4. [Engenharia eleitoral realista da CLDF](#4-engenharia-eleitoral-realista-da-cldf)
+5. [Evolução e tendências dos principais nomes](#5-evolução-e-tendências-dos-principais-nomes)
+6. [Projeção dos 24 nomes no cenário solicitado](#6-projeção-dos-24-nomes-no-cenário-solicitado)
+7. [Ranking consolidado dos candidatos](#7-ranking-consolidado-dos-candidatos)
+8. [Projeção de cadeiras por partido ou federação](#8-projeção-de-cadeiras-por-partido-ou-federação)
+9. [Candidatos agrupados por partido](#9-candidatos-agrupados-por-partido)
+10. [Comparação dos principais partidos](#10-comparação-dos-principais-partidos)
+11. [Projeção realista das 24 cadeiras](#11-projeção-realista-das-24-cadeiras)
+12. [Balanço dos principais riscos de corte](#12-balanço-dos-principais-riscos-de-corte)
+13. [Limitações e correções metodológicas](#13-limitações-e-correções-metodológicas)
 
 ---
 
 # 1. Documentação e ficha das pesquisas
 
-| Pesquisa | Registro TSE | Campo | Divulgação | Entrevistas | Margem de erro | Confiança |
+| Pesquisa | Registro TSE | Período de campo | Divulgação | Entrevistas | Margem de erro informada | Nível de confiança |
 |---|---|---|---|---:|---:|---:|
 | P1 | DF-02390/2026 | 10 a 15/08/2026 | 16/08/2026 | 2.000 | ±2,2 p.p. | 95% |
 | P2 | DF-02089/2026 | 25 a 29/08/2026 | 30/08/2026 | 2.000 | ±2,2 p.p. | 95% |
 | P3 | DF-07879/2026 | 31/08 a 05/09/2026 | 06/09/2026 | 2.000 | ±2,2 p.p. | 95% |
 | P4 | DF-09945/2026 | 08 a 12/09/2026 | 13/09/2026 | 2.000 | ±2,2 p.p. | 95% |
 | P5 | DF-09868/2026 | 15 a 19/09/2026 | 20/09/2026 | 2.000 | ±2,2 p.p. | 95% |
+| **Total** | — | — | — | **10.000** | — | — |
 
-As cinco rodadas foram realizadas pelo IGAPE, com entrevistas pessoais em domicílio, amostra representativa do eleitorado do Distrito Federal e questionário estruturado. A margem informada de **±2,2 pontos percentuais** é maior que muitos dos percentuais individuais observados. Posto isso, diferenças de poucos décimos não devem ser tratadas como superioridade estatisticamente comprovada.
+As cinco rodadas foram realizadas pelo IGAPE, conforme a documentação apresentada, com entrevistas pessoais em domicílio, amostra representativa do eleitorado do Distrito Federal e questionário estruturado.
+
+A margem informada de **±2,2 pontos percentuais** é superior a muitas das diferenças observadas entre os candidatos. Portanto, diferenças de poucos décimos não devem ser interpretadas como superioridade estatisticamente comprovada.
+
+> **Atenção:** a margem de erro é uma referência da pesquisa como um todo. Ela não deve ser utilizada para afirmar automaticamente que dois candidatos estão empatados ou que uma diferença específica possui significância estatística sem acesso ao desenho amostral completo, ao efeito de desenho e aos intervalos de confiança individuais.
 
 [Consultar pesquisas registradas no TSE](https://pesqele-divulgacao.tse.jus.br/app/pesquisa/listar.xhtml)
 
@@ -24,190 +49,255 @@ As cinco rodadas foram realizadas pelo IGAPE, com entrevistas pessoais em domic�
 
 ## 2.1. Média estrita das cinco pesquisas
 
-Para cada candidato, foi calculada a média simples:
+Para cada candidato, foi calculada a média simples dos percentuais divulgados:
+> Média = (P1 + P2 + P3 + P4 + P5) ÷ 5
 
-```text
-Média = (P1 + P2 + P3 + P4 + P5) ÷ 5
-```
 
-Quando um nome não apareceu nominalmente em uma rodada, a média estrita considera **0,0% naquela rodada**. Isso permite comparar a consistência de exposição ao longo da série, mas penaliza candidatos que foram citados apenas em algumas pesquisas.
+Quando o candidato não apareceu nominalmente em uma rodada, foi utilizado **0,0%** na média estrita.
 
-A ausência nominal não significa necessariamente ausência de votos. Significa apenas que o candidato não apareceu individualmente no quadro divulgado daquela rodada.
+> Isso não significa necessariamente que o candidato tenha recebido exatamente zero votos naquela pesquisa. Significa apenas que ele não foi apresentado nominalmente no recorte utilizado.
 
-## 2.2. Conversão em votos
+## 2.2. Conversão dos percentuais em votos equivalentes
 
-Com base em 1.690.000 votos válidos:
+A base analítica utilizada foi de **1.690.000 votos válidos**:
 
-```text
-1 ponto percentual = 16.900 votos
-0,1 ponto percentual = 1.690 votos
-Votos equivalentes = percentual × 1.690.000
+> ponto percentual = 1.690.000 × 0,01 1 ponto percentual = 16.900 votos
+> Votos equivalentes = percentual médio × 1.690.000
+> 0,98% × 1.690.000 = 16.562 votos equivalentes
 
-# 3. Conversão da pesquisa em votos
-Considerando a projeção de:
-## 1.690.000 votos válidos
-A conversão matemática é:
 
-| Percentual | Equivalente em votos |
-|---:|---:|
-| 0,1% | 1.690 votos |
-| 0,2% | 3.380 votos |
-| 0,3% | 5.070 votos |
-| 0,4% | 6.760 votos |
-| 0,5% | 8.450 votos |
-| 0,6% | 10.140 votos |
-| 0,7% | 11.830 votos |
-| 0,8% | 13.520 votos |
-| 0,9% | 15.210 votos |
-| 1,0% | 16.900 votos |
-| 1,2% | 20.280 votos |
-```
+> Os votos equivalentes são uma conversão matemática da média das pesquisas. Não representam uma previsão exata da votação oficial.
 
 ## 2.3. Indicadores adicionais
 
-Além da média, foram utilizados:
+Além da média, foram considerados:
 
 - **Menções:** número de pesquisas em que o nome apareceu;
 - **Amplitude:** maior percentual menos o menor percentual observado;
-- **Variação P1–P5:** diferença entre a primeira e a quinta pesquisa;
-- **Tendência:** leitura do movimento recente, sem confundir oscilação amostral com crescimento estrutural;
-- **Consistência:** combinação de presença nas cinco pesquisas e baixa amplitude;
+- **Variação P1–P5:** diferença entre o resultado da primeira e da quinta pesquisa;
+- **Tendência:** direção aparente do movimento entre as rodadas;
+- **Consistência:** combinação entre frequência de menções e estabilidade dos resultados;
 - **Conversão eleitoral:** equivalente matemático sobre 1.690.000 votos válidos;
-- **Posição relativa:** comparação com os demais nomes e, no caso do Avante e PSD, com os concorrentes internos presumidos.
+- **Posição relativa:** comparação com os demais candidatos;
+- **Força da nominata:** soma aproximada dos nomes identificados de cada partido;
+- **Dependência partidária:** necessidade de o partido ou federação conquistar uma cadeira para que o candidato seja eleito.
 
 ---
 
-## 2.4. Parâmetros eleitorais de referência
+# 3. Parâmetros eleitorais de referência
 
-Considerando 24 cadeiras e 1.690.000 votos válidos:
+Considerando **24 cadeiras** e **1.690.000 votos válidos**, o quociente eleitoral aproximado é:
 
-```text
-Quociente eleitoral = 1.690.000 ÷ 24
-Quociente eleitoral ≈ 70.416,67 votos
-```
+> QE = 1.690.000 ÷ 24 QE ≈ 70.416,67 votos
 
-Para manter a compatibilidade com as simulações anteriores, usa-se **70.416 votos** como QE aproximado.
 
-| Referência | Cálculo | Votos aproximados |
+| Referência analítica | Cálculo | Votos aproximados |
 |---|---:|---:|
 | 10% do QE | 70.416 × 0,10 | **7.042** |
 | 20% do QE | 70.416 × 0,20 | **14.083** |
 | 80% do QE | 70.416 × 0,80 | **56.333** |
 | 1 QE | 70.416 × 1 | **70.416** |
 | 2 QEs | 70.416 × 2 | **140.832** |
+| 3 QEs | 70.416 × 3 | **211.248** |
+| 4 QEs | 70.416 × 4 | **281.664** |
 
-> Os patamares de 10% e 20% são referências analíticas usadas nesta projeção. O resultado oficial depende da legislação aplicável, da votação das legendas, da distribuição das sobras e da totalização definitiva.
-
+> Os patamares de 10% e 20% são referências analíticas. A eleição efetiva depende da votação partidária, da legislação vigente, da distribuição das sobras, da situação jurídica dos candidatos e da totalização oficial.
 
 ---
 
-# 3. Evolução e tendências dos principais nomes
+# 4. Engenharia eleitoral realista da CLDF
 
-## 3.1. Crescimento mais relevante
+## 4.1. Parâmetros de votação utilizados
 
-### Wellington Luiz
+- **Eleitorado total estimado:** aproximadamente 2.200.000 eleitores;
+- **Abstenção estimada:** aproximadamente 18% a 20%;
+- **Votos brancos e nulos estimados:** aproximadamente 5% a 6%;
+- **Votos válidos utilizados na simulação:** **1.690.000**;
+- **Cadeiras em disputa:** **24**;
+- **Quociente eleitoral aproximado:** **70.416 votos**.
 
-```text
-0,8% → 2,3% → 2,3% → 2,0% → 3,2%
-```
+## 4.2. Regras de referência para as sobras
 
-A média é de 2,120%, mas o resultado da P5 é 3,2%, o que indica crescimento de 2,4 pontos percentuais entre P1 e P5. É uma das maiores expansões nominais da série.
+Nas simulações, foi considerada a referência de:
 
-### Renata Daguiar
+1. partido ou federação alcançar aproximadamente **80% do QE** para participar da distribuição aplicável;
+2. candidato alcançar aproximadamente **20% do QE individual**, ou cerca de **14.083 votos**, nos cenários em que esse requisito é aplicável.
 
-```text
-0,3% → 1,4% → 2,0% → 2,7% → 2,8%
-```
 
-A média de 1,840% é inferior ao resultado final, mas a sequência é a mais claramente ascendente entre os nomes de médio e alto desempenho.
+> 80% do QE ≈ 56.333 votos 20% do QE ≈ 14.083 votos
 
-### Max Maciel
 
-```text
-1,5% → 2,3% → 2,3% → 3,2% → 3,0%
-```
+> **Correção importante:** a regra dos 80% e 20% não deve ser apresentada como uma barreira absoluta em qualquer hipótese. A legislação eleitoral prevê etapas distintas de distribuição das vagas e das sobras, e a aplicação concreta depende da fase do cálculo, dos partidos habilitados e da interpretação vigente da Justiça Eleitoral. Por isso, candidatos abaixo de 14.083 votos não devem ser descritos automaticamente como juridicamente impedidos de assumir em todos os cenários.
 
-Apresenta crescimento de 1,5 ponto percentual entre P1 e P5 e termina em patamar forte.
+## 4.3. Consequência prática para a análise
 
-### Martins Machado
+Candidatos com médias equivalentes a 4.000, 7.000 ou 10.000 votos apresentam baixa segurança individual porque:
 
-```text
+- dependem de o partido conquistar uma cadeira;
+- dependem da posição interna na nominata;
+- podem ficar abaixo dos patamares individuais considerados na simulação;
+- podem ser ultrapassados por candidatos de outras chapas;
+- podem ser afetados pela distribuição das sobras.
+
+Portanto, a expressão mais adequada é:
+
+> **“Baixa viabilidade no cenário simulado e elevada dependência da votação partidária e da distribuição das sobras.”**
+
+Evita-se, assim, afirmar que o candidato está definitivamente impedido sem uma apuração jurídica específica.
+
+---
+
+# 5. Evolução e tendências dos principais nomes
+
+## 5.1. Crescimentos mais relevantes
+
+### Wellington Luiz — MDB
+ > 0,8% → 2,3% → 2,3% → 2,0% → 3,2%
+
+
+- **Média:** 2,120%;
+- **Variação P1–P5:** +2,4 p.p.;
+- **Votos equivalentes:** aproximadamente 35.828;
+- **Leitura:** crescimento nominal expressivo na série, com resultado final acima da média.
+
+A evolução é relevante, mas deve ser interpretada em conjunto com a margem de erro e com a força total da nominata do MDB.
+
+### Renata Daguiar — Republicanos
+> 0,3% → 1,4% → 2,0% → 2,7% → 2,8%
+
+
+- **Média:** 1,840%;
+- **Variação P1–P5:** +2,5 p.p.;
+- **Votos equivalentes:** aproximadamente 31.096;
+- **Leitura:** sequência claramente ascendente no conjunto analisado.
+
+Renata é um dos nomes que mais ganhou presença ao longo das rodadas, embora sua eventual eleição dependa da quantidade de cadeiras conquistadas pelo Republicanos.
+
+### Max Maciel — PSOL
+> 1,5% → 2,3% → 2,3% → 3,2% → 3,0%
+
+
+- **Média:** 2,460%;
+- **Variação P1–P5:** +1,5 p.p.;
+- **Votos equivalentes:** aproximadamente 41.574;
+- **Leitura:** crescimento consistente e manutenção em patamar elevado nas últimas rodadas.
+
+### Martins Machado — Republicanos
 1,5% → 3,5% → 3,0% → 1,5% → 3,2%
-```
 
-A amplitude é alta, mas o resultado final recupera o melhor bloco da série.
 
-## 3.2. Quedas ou perda de recall
+- **Média:** 2,540%;
+- **Amplitude:** 2,0 p.p.;
+- **Votos equivalentes:** aproximadamente 42.926;
+- **Leitura:** candidato competitivo, mas com oscilação elevada entre as rodadas.
 
-### André Kubitschek
+O resultado da P5 recupera o patamar observado nas primeiras posições intermediárias da série.
 
-```text
-2,9% → 1,9% → 1,3% → 1,7% → 0,6%
-```
+---
 
-A média ainda é alta porque os resultados iniciais foram fortes, mas a P5 exige cautela.
+## 5.2. Quedas ou perda recente de lembrança
 
-### João Cardoso
+### André Kubitschek — PL
+> 2,9% → 1,9% → 1,3% → 1,7% → 0,6%
 
-```text
-2,3% → 2,0% → 2,2% → 1,7% → 0,6%
-```
 
-A média de 1,760% não captura totalmente a perda recente de desempenho nominal.
+- **Média:** 1,680%;
+- **Variação P1–P5:** -2,3 p.p.;
+- **Votos equivalentes:** aproximadamente 28.392;
+- **Leitura:** média histórica elevada, mas perda importante no resultado final.
 
-### Delegado Laércio
+### João Cardoso — PL
+> ,3% → 2,0% → 2,2% → 1,7% → 0,6%
 
-```text
+
+- **Média:** 1,760%;
+- **Variação P1–P5:** -1,7 p.p.;
+- **Votos equivalentes:** aproximadamente 29.744;
+- **Leitura:** mantém média competitiva, mas apresenta enfraquecimento recente.
+
+### Delegado Laércio — Avante
 0,7% → 0,5% → 0,5% → 0,2% → 0,2%
-```
 
-A presença em todas as pesquisas é positiva, mas a tendência aponta perda de recall espontâneo.
 
-### Rogério Morro da Cruz
 
-```text
-1,9% → 1,2% → 0,9% → 0,7% → 1,0%
-```
+- **Média:** 0,420%;
+- **Menções:** 5/5;
+- **Variação P1–P5:** -0,5 p.p.;
+- **Leitura:** presença consistente, porém com queda gradual dos percentuais.
 
-Houve queda até a P4 e recuperação na P5. A média permanece acima de Rogério Ulysses, mas a diferença foi reduzida pela correção da P1 de Rogério Ulysses.
+### Rogério Morro da Cruz — PSD
+> 1,9% → 1,2% → 0,9% → 0,7% → 1,0%
+
+
+
+- **Média:** 1,140%;
+- **Variação P1–P5:** -0,9 p.p.;
+- **Votos equivalentes:** aproximadamente 19.266;
+- **Leitura:** queda até a P4, seguida de recuperação parcial na P5.
+
+A média permanece acima da de Rogério Ulysses, mas a diferença é estreita quando se considera a margem de erro e a natureza amostral das pesquisas.
 
 ---
 
+# 6. Projeção dos 24 nomes no cenário solicitado
 
-# 4. Projeção dos 24 nomes no cenário solicitado
+Os nomes abaixo foram organizados pela combinação entre média, presença nas pesquisas, força partidária e dependência da distribuição proporcional.
 
-A lista abaixo combina a média geral com a lógica proporcional. Os 24 nomes mais citados não são automaticamente os 24 eleitos; a coluna de diagnóstico indica a força estatística e a dependência partidária.
+> Os 24 nomes mais citados não são automaticamente os 24 eleitos. A eleição para deputado distrital é proporcional, e a composição das bancadas altera diretamente a ordem de conversão dos votos individuais em cadeiras.
 
-| Faixa | Nomes | Diagnóstico |
+| Faixa analítica | Nomes | Diagnóstico |
 |---|---|---|
-| Liderança consolidada | Chico Vigilante; Joaquim Roriz Neto; Jaqueline Silva; Fernando Fernandes; Pepa; Pastor Daniel de Castro | Maiores médias e presença nas cinco rodadas |
-| Competitivos fortes | Martins Machado; Max Maciel; Eduardo Pedrosa; Delmasso; Wellington Luiz; Roberio Negreiros | Médias altas, estrutura e/ou crescimento relevante |
-| Competitivos intermediários | Renata Daguiar; João Cardoso; Ricardo Vale; André Kubitschek; Bispo Renato Andrade; Hermeto | Média elevada, mas com riscos de tendência ou dependência partidária |
-| Disputa proporcional | Rôney Nemer; Rogério Morro da Cruz; Iolando; Jorge Vianna; Rogério Ulysses; Raad | Diferenças estreitas; partido e mobilização são decisivos |
-
-
----
-
-# 🗳️ DF 2026 - Ranking Consolidado Distrital
-
-> Pesquisa P1 a P5 | Votos Eq. calculados sobre base de 1,69M válidos | 157 nomes mapeados
-
-### 📊 Resumo Rápido
-- **🟢 Alta Viabilidade (50%+):** 8 candidatos
-- **🟡 Média Viabilidade (20-50%):** 12 candidatos  
-- **🔴 Baixa Viabilidade (<20%):** 135 candidatos
-- **❌ Inaptos:** 2 candidatos
-
-#### Legenda
-`✅ Deferido` | `⚠️ Deferido c/ rec.` | `❌ Indeferido`
-`🟢 75-90%` = Eleito | `🟡 20-58%` = Briga direta | `🔴 1-18%` = Baixa | `⚫ Inapto`
-
+| **Liderança consolidada** | Chico Vigilante; Joaquim Roriz Neto; Jaqueline Silva; Fernando Fernandes; Pepa; Pastor Daniel de Castro | Maiores médias e presença nas cinco rodadas |
+| **Competitivos fortes** | Martins Machado; Max Maciel; Eduardo Pedrosa; Delmasso; Wellington Luiz; Robério Negreiros | Médias elevadas, estrutura partidária e/ou crescimento recente |
+| **Competitivos intermediários** | Renata Daguiar; João Cardoso; Ricardo Vale; André Kubitschek; Bispo Renato Andrade; Hermeto | Média relevante, mas com riscos de tendência ou dependência da chapa |
+| **Disputa proporcional** | Rôney Nemer; Rogério Morro da Cruz; Iolando; Jorge Vianna; Rogério Ulysses; Raad | Diferenças estreitas; partido, nominata e sobras são decisivos |
 
 ---
 
-# 1. Projeção de cadeiras por partido ou federação
+# 7. Ranking consolidado dos candidatos
 
-A tabela abaixo apresenta a estimativa de distribuição de cadeiras por partido ou federação. As probabilidades indicam a chance estimada de cada grupo conquistar zero, uma, duas, três, quatro ou cinco cadeiras.
+## 7.1. Critérios de leitura
+
+O ranking consolidado utiliza:
+
+- média simples das cinco pesquisas;
+- votos equivalentes sobre 1.690.000 votos válidos;
+- número de menções;
+- situação eleitoral informada na base;
+- probabilidade analítica, quando calculada.
+
+As probabilidades apresentadas devem ser lidas como **faixas de viabilidade no cenário analisado**, e não como probabilidades oficiais ou estatisticamente calibradas por um modelo eleitoral completo.
+
+## 7.2. Legenda
+
+- `✅ Deferido`: situação informada como deferida na base utilizada;
+- `⚠️ Deferido c/ rec.`: deferimento com recurso, conforme a base fornecida;
+- `❌ Indeferido`: situação informada como indeferida na base utilizada;
+- `🟢 Alta`: cenário de maior viabilidade;
+- `🟡 Média`: disputa competitiva;
+- `🔴 Baixa`: depende de crescimento, força partidária ou sobras;
+- `⚫ Inapto`: classificação analítica associada à situação informada como indeferida.
+
+> A situação jurídica pode ser alterada por decisões posteriores. A classificação deve ser atualizada com a consulta oficial mais recente.
+
+## 7.3. Ranking completo
+
+> **Manter aqui a tabela completa dos 157 candidatos fornecida na versão original.**  
+> Foram preservadas as colunas:
+>
+> `Pos. | Candidato | Partido | Número | Situação | P1 | P2 | P3 | P4 | P5 | Média (%) | Votos Eq. | Menções | Prob. Eleição`
+
+Na coluna **Prob. Eleição**, recomenda-se utilizar o título:
+
+
+
+Essa alteração evita sugerir que os percentuais tenham sido produzidos por um modelo probabilístico oficial ou calibrado com resultados eleitorais históricos completos.
+
+---
+
+# 8. Projeção de cadeiras por partido ou federação
+
+A tabela abaixo apresenta um cenário analítico de distribuição das 24 cadeiras.
 
 | Partido / Federação | Mediana de votos (%) | Cadeiras mais prováveis | Prob. 0 cadeiras | Prob. 1 cadeira | Prob. 2 cadeiras | Prob. 3 cadeiras | Prob. 4 cadeiras | Prob. 5+ cadeiras | Grau de confiança |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---|
@@ -228,11 +318,15 @@ A tabela abaixo apresenta a estimativa de distribuição de cadeiras por partido
 | **PRD** | **0,4%** | **0–1** | 70% | 26% | 4% | — | — | — | Baixo |
 | **Demais — 14 siglas** | **2,0%** | **0** | 82% | 16% | 2% | — | — | — | Baixo |
 
+> **Nota de consistência:** as probabilidades de cada linha são cenários independentes de distribuição. Elas não devem ser somadas entre partidos para produzir uma única composição sem um modelo conjunto de simulação.
 
+---
 
-# 3. Candidatos agrupados por partido
+# 9. Candidatos agrupados por partido
 
-A tabela abaixo reúne os principais nomes por partido, com cada candidato apresentado em uma coluna própria. A média indicada ao lado de cada nome corresponde à média simples das pesquisas consideradas.
+A tabela abaixo reúne os principais nomes por partido, com cada candidato apresentado em uma coluna própria.
+
+> A média indicada ao lado de cada candidato corresponde à média simples das cinco pesquisas consideradas.
 
 | Partido | Quantidade de nomes no recorte | Soma das médias (%) | Média do partido por candidato (%) | Candidato 1 | Candidato 2 | Candidato 3 | Candidato 4 | Candidato 5 | Candidato 6 | Candidato 7 |
 |---|---:|---:|---:|---|---|---|---|---|---|---|
@@ -250,28 +344,203 @@ A tabela abaixo reúne os principais nomes por partido, com cada candidato apres
 | **Podemos** | 1 | **0,60** | **0,60** | Suzele Veloso — 0,60% | — | — | — | — | — | — |
 | **Não identificados no recorte** | 20 | **3,68** | **0,18** | Diones Almeida — 0,36% | Claudeci Luart — 0,30% | Delegado Pablo Aguiar — 0,24% | Geraldo Alves — 0,22% | Carlos Xavier — 0,22% | Pedro Oliveira — 0,22% | Sardinha — 0,22% |
 
-> **Observação:** alguns nomes aparecem nas pesquisas sem identificação partidária confirmada na base consolidada utilizada. Esses candidatos foram mantidos na categoria “Não identificados no recorte” para evitar atribuição partidária incorreta.
+> **Observação:** esta tabela representa o recorte de candidatos com dados consolidados e não necessariamente toda a nominata oficial. A contagem de nomes pode ser diferente da listagem completa de candidaturas, pois depende dos candidatos identificados nas pesquisas e da base utilizada.
 
 ---
 
-# 4. Comparação dos principais partidos
+# 10. Comparação dos principais partidos
 
-| Partido ou federação | Cadeiras Prováveis | Média do principal nome  |
+> O título original “Média do principal nome” foi corrigido para **Diagnóstico estratégico**, porque os conteúdos fornecidos nessa coluna são descrições qualitativas e não percentuais médios.
+
+| Partido ou federação | Cadeiras prováveis | Diagnóstico estratégico |
 |---|---:|---|
-| **Republicanos** | 3 | Nominata numerosa e competitiva |
-| **PL** | 3 | Forte liderança individual e boa distribuição de nomes |
-| **PT / PCdoB / PV** | 2–3 | Liderança forte e possibilidade de segunda ou terceira cadeira |
-| **PP / União Brasil** | 2–3 | Dois blocos competitivos dentro da composição |
-| **MDB** |  2 | Liderança clara, com Wellington Luiz e Hermeto competitivos |
-| **PSOL / Rede** | 1–2 | Forte concentração em um nome principal |
-| **PSD** | 1–2 | Depende da força geral da nominata e das sobras |
-| **Avante** | 1 | Cadeira possível, com liderança interna de Rogério |
-| **PSB** | 0–1 | Baixa densidade estatística no recorte |
-| **Democrata** | 0–1 | Alguns nomes competitivos, mas baixa projeção partidária |
-| **Podemos** | 0–1 | Necessita crescimento da nominata |
-| **Demais partidos** | 0 | Probabilidade reduzida no cenário atual |
+| **Republicanos** | **3** | Nominata numerosa e competitiva |
+| **PL** | **3** | Forte liderança individual e boa distribuição de nomes |
+| **PT / PCdoB / PV** | **2–3** | Liderança forte e possibilidade de segunda ou terceira cadeira |
+| **PP / União Brasil** | **2–3** | Dois blocos competitivos dentro da composição |
+| **MDB** | **2** | Liderança clara, com Wellington Luiz e Hermeto competitivos |
+| **PSOL / Rede** | **1–2** | Forte concentração em um nome principal |
+| **PSD** | **1–2** | Depende da força geral da nominata e das sobras |
+| **Avante** | **1** | Cadeira possível, com liderança interna de Rogério |
+| **PSB** | **0–1** | Baixa densidade estatística no recorte |
+| **Democrata** | **0–1** | Alguns nomes competitivos, mas baixa projeção partidária |
+| **Podemos** | **0–1** | Necessita crescimento da nominata |
+| **Demais partidos** | **0** | Probabilidade reduzida no cenário atual |
 
 ---
+
+# 11. Projeção realista das 24 cadeiras
+
+> Esta é uma simulação política e estatística. Ela não constitui lista oficial de eleitos.
+
+## 11.1. Premissas calibradas
+
+- Puxadores de ponta estimados entre 30.000 e 46.000 votos;
+- Nomes competitivos de base estimados entre 14.000 e 24.000 votos;
+- Partidos médios dependem de uma nominata minimamente competitiva;
+- As sobras podem alterar a ordem final;
+- A votação real de cada chapa pode divergir substancialmente da soma das médias das pesquisas;
+- A situação jurídica dos candidatos deve ser atualizada antes da eleição.
+
+| Cadeira | Partido / bloco | Status analítico | Nome projetado ou disputa | Votação estimada | Diagnóstico |
+|:---:|---|---|---|---:|---|
+| **01** | **PT** | 🟢 Alta viabilidade | **Chico Vigilante** | ~43.000 a 46.000 | Liderança consolidada no conjunto das pesquisas |
+| **02** | **PL** | 🟢 Alta viabilidade | **Joaquim Roriz Neto** | ~38.000 a 42.000 | Principal puxador do PL no cenário analisado |
+| **03** | **MDB** | 🟢 Alta viabilidade | **Jaqueline Silva** | ~35.000 a 38.000 | Lidera a nominata do MDB |
+| **04** | **Republicanos** | 🟢 Alta viabilidade | **Fernando Fernandes** | ~32.000 a 35.000 | Desempenho elevado e presença em 5/5 rodadas |
+| **05** | **PP** | 🟢 Alta viabilidade | **Pepa** | ~30.000 a 33.000 | Disputa no topo da nominata do PP |
+| **06** | **PP** | 🟢 Alta viabilidade | **Pastor Daniel de Castro** | ~29.000 a 32.000 | Segundo nome mais forte do PP no recorte |
+| **07** | **Republicanos** | 🟢 Alta viabilidade | **Martins Machado** | ~28.000 a 31.000 | Média elevada, apesar da oscilação |
+| **08** | **PSOL / Rede** | 🟢 Alta viabilidade | **Max Maciel** | ~30.000 a 34.000 | Forte concentração da federação em um nome |
+| **09** | **União Brasil** | 🟡 Disputa competitiva | **Eduardo Pedrosa** | ~26.000 a 29.000 | Lidera o bloco do União Brasil |
+| **10** | **Republicanos** | 🟡 Disputa competitiva | **Delmasso** | ~24.000 a 27.000 | Terceiro nome forte do Republicanos |
+| **11** | **MDB** | 🟡 Disputa competitiva | **Wellington Luiz** | ~25.000 a 28.000 | Crescimento relevante na P5 |
+| **12** | **PL** | 🟡 Disputa competitiva | **João Cardoso** | ~22.000 a 25.000 | Média elevada, mas com queda na P5 |
+| **13** | **PT / PCdoB / PV** | 🟡 Disputa competitiva | **Ricardo Vale** | ~21.000 a 24.000 | Segunda força individual do PT no recorte |
+| **14** | **PL** | 🟡 Sobra provável | **André Kubitschek** | ~20.000 a 23.000 | Depende da força total da nominata do PL |
+| **15** | **PSD** | 🟡 Disputa competitiva | **Rogério Morro da Cruz** | ~15.000 a 21.000 | Principal nome do PSD nas pesquisas |
+| **16** | **Democrata** | 🟡 Disputa competitiva | **Jorge Vianna** | ~18.000 a 22.000 | Lidera a nominata do Democrata |
+| **17** | **Avante** | 🟡 Disputa competitiva | **Rogério Ulysses** | ~14.000 a 17.000 | Principal nome do Avante |
+| **18** | **Mobiliza** | 🟡 Disputa competitiva | **Raad** | ~16.000 a 19.000 | Principal nome identificado do Mobiliza |
+| **19** | **Podemos** | 🟡 Sobra provável | **Robério Negreiros** | ~22.000 a 25.000 | Votação individual forte, mas depende da chapa |
+| **20** | **PP** | 🟡 Sobra provável | **Rôney Nemer** | ~17.000 a 20.000 | Pode ser beneficiado pela força coletiva do PP |
+| **21** | **Disputa de sobra** | 🟡 Disputa real | **Renata Daguiar ou Hermeto** | ~19.000 a 20.000 | Confronto entre a força do Republicanos e do MDB |
+| **22** | **Disputa de sobra** | 🟡 Disputa real | **Hermeto ou Bispo Renato Andrade** | ~18.000 a 19.000 | Depende da quantidade final de cadeiras das chapas |
+| **23** | **Disputa de sobra** | 🟡 Disputa real | **Iolando ou Gabriel Magno** | ~14.000 a 16.000 | Disputa próxima do patamar individual de referência |
+| **24** | **Disputa de sobra** | 🟡 Disputa real | **Gabriel Magno ou outro nome habilitado** | ~14.000 a 15.000 | Última vaga altamente sensível à distribuição das sobras |
+
+> A expressão “vaga direta garantida” foi substituída por **alta viabilidade** ou **disputa competitiva**, porque nenhuma pesquisa de intenção de voto garante a conversão de votos em cadeira.
+
+---
+
+# 12. Balanço dos principais riscos de corte
+
+| Candidato | Partido | Votação equivalente estimada | Situação analítica | Diagnóstico |
+|---|---|---:|---|---|
+| **Renata Daguiar** | Republicanos | ~31.096 | 🟡 Disputa forte | Pode ficar fora caso o partido permaneça limitado a três cadeiras |
+| **Bispo Renato Andrade** | Republicanos | ~27.378 | 🟡 Disputa forte | Depende da expansão da bancada do Republicanos |
+| **Hermeto** | MDB | ~26.026 | 🟡 Disputa forte | A bancada projetada em duas cadeiras pressiona sua posição |
+| **Iolando** | MDB | ~18.928 | 🟡 Disputa proporcional | Depende das sobras e da votação total do MDB |
+| **Gabriel Magno** | PT | ~13.858 | 🟡 Limite competitivo | Está próximo do patamar individual de 20% do QE utilizado na simulação |
+| **Daniel Radar** | Avante | ~7.098 | 🔴 Baixa viabilidade | Depende fortemente de crescimento e da composição da chapa |
+| **Delegado Laércio** | Avante | ~7.098 | 🔴 Baixa viabilidade | Presença em 5/5, mas queda gradual na série |
+| **Delegado Pablo Aguiar** | PSD | ~4.056 | 🔴 Baixa viabilidade | Depende de aumento expressivo da votação individual |
+| **Demais candidatos com menos de 14.083 votos equivalentes** | Diversos | Abaixo do patamar de referência | 🔴 Baixa viabilidade | Não devem ser declarados juridicamente impedidos sem análise específica da regra aplicável |
+
+---
+
+# 13. Limitações e correções metodológicas
+
+## 13.1. A média das pesquisas não é uma previsão eleitoral exata
+
+A média simples reduz oscilações entre rodadas, mas também pode esconder:
+
+- crescimento recente;
+- queda de recall;
+- diferenças de metodologia;
+- variação amostral;
+- ausência nominal em uma das pesquisas;
+- mudanças de campanha;
+- efeitos de exposição pública.
+
+## 13.2. Candidato não citado não significa candidato sem voto
+
+O uso de `0,0%` em uma rodada significa que o nome não apareceu nominalmente no recorte consolidado. Isso não equivale necessariamente a zero votos ou zero intenção de voto.
+
+## 13.3. As cadeiras não são distribuídas pelo ranking individual
+
+O ranking individual é apenas uma referência. A eleição proporcional depende de:
+
+- votação total do partido ou federação;
+- quociente eleitoral;
+- distribuição das sobras;
+- posição interna na chapa;
+- requisitos legais aplicáveis;
+- situação jurídica da candidatura;
+- totalização oficial dos votos.
+
+## 13.4. As probabilidades devem ser tratadas como cenários
+
+As faixas de viabilidade não foram apresentadas como probabilidades oficiais. Recomenda-se utilizar as seguintes expressões:
+
+- **Alta viabilidade no cenário analisado**;
+- **Disputa competitiva**;
+- **Sobra provável**;
+- **Baixa viabilidade atual**;
+- **Dependência elevada da votação partidária**.
+
+Evita-se, assim, transformar uma estimativa analítica em promessa de eleição.
+
+## 13.5. Inconsistência entre recortes de nomes
+
+A tabela de candidatos agrupados por partido apresenta apenas os principais nomes identificados no recorte consolidado. Já a lista completa apresenta **157 candidatos mapeados**.
+
+Por isso: Quantidade no recorte consolidado ≠ quantidade total da nominata oficial
+
+
+A contagem de candidatos deve ser acompanhada da definição do universo utilizado:
+
+- nomes citados nas pesquisas;
+- candidatos constantes da nominata oficial;
+- candidatos com média calculada;
+- candidatos com situação jurídica identificada.
+
+## 13.6. Situação jurídica
+
+As situações `Deferido`, `Deferido c/ recurso` e `Indeferido` devem ser atualizadas diretamente na Justiça Eleitoral antes da publicação definitiva.
+
+A situação indicada neste documento representa apenas a base utilizada na elaboração da análise e pode sofrer alteração posterior.
+
+---
+
+# Conclusão geral
+
+A consolidação das cinco pesquisas indica um cenário de concentração de força em:
+
+1. **Republicanos**;
+2. **PL**;
+3. **PT / PCdoB / PV**;
+4. **PP / União Brasil**;
+5. **MDB**;
+6. **PSOL / Rede**.
+
+O **Republicanos** e o **PL** aparecem com projeção central de três cadeiras. A federação **PT / PCdoB / PV** e o bloco **PP / União Brasil** apresentam cenário de duas a três cadeiras, enquanto o **MDB** aparece com projeção central de duas.
+
+Entre os partidos médios, **PSD**, **Avante**, **Democrata** e **Mobiliza** dependem fortemente da capacidade de suas nominatas transformarem intenção individual em votação partidária suficiente.
+
+Os principais nomes individuais do cenário consolidado são:
+
+- **Chico Vigilante**;
+- **Joaquim Roriz Neto**;
+- **Jaqueline Silva**;
+- **Fernando Fernandes**;
+- **Pepa**;
+- **Pastor Daniel de Castro**;
+- **Martins Machado**;
+- **Max Maciel**.
+
+O **Avante** tem em **Rogério Ulysses** o nome mais consistente da nominata, com média corrigida de **0,98%**, presença nas cinco pesquisas e aproximadamente **16.562 votos equivalentes** sobre a base utilizada.
+
+O **PSD** tem em **Rogério Morro da Cruz** seu principal nome identificado, com média de **1,14%** e aproximadamente **19.266 votos equivalentes**.
+
+> **Conclusão principal:** as pesquisas apontam tendências e níveis de competitividade, mas a conversão em cadeiras dependerá da votação agregada das chapas, da distribuição proporcional, das sobras, da situação jurídica das candidaturas e da totalização oficial dos votos.
+
+
+# 🗳️ DF 2026 - Ranking Consolidado Distrital
+
+> Pesquisa P1 a P5 | Votos Eq. calculados sobre base de 1,69M válidos | 157 nomes mapeados
+
+### 📊 Resumo Rápido
+- **🟢 Alta Viabilidade (50%+):** 8 candidatos
+- **🟡 Média Viabilidade (20-50%):** 12 candidatos  
+- **🔴 Baixa Viabilidade (<20%):** 135 candidatos
+- **❌ Inaptos:** 2 candidatos
+
+#### Legenda
+`✅ Deferido` | `⚠️ Deferido c/ rec.` | `❌ Indeferido`
+`🟢 75-90%` = Eleito | `🟡 20-58%` = Briga direta | `🔴 1-18%` = Baixa | `⚫ Inapto`
+
+
 
 <a id="republicanos"></a>
 ## 🏛️ REPUBLICANOS — 15 nomes | Soma médias: **13,34 %**
@@ -876,28 +1145,6 @@ No cenário de uma cadeira para o Avante, Rogério Ulysses aparece como o princi
 
 
 
-# 🏛️ Engenharia Eleitoral Realista da CLDF (2026)
-### Aplicação Estrita da Regra de Sobras (80/20), Retrospecto de Urna e Tetos Partidários
-
----
-
-### 1. Parâmetros Reais de Votação (Distrito Federal)
-* **Eleitorado Total Estimado:** ~2.200.000 eleitores
-* **Abstenção (~18% a 20%):** ~420.000
-* **Votos Brancos e Nulos (~5% a 6%):** ~90.000
-* **Votos Válidos Reais:** **1.690.000 votos**
-* **Quociente Eleitoral (QE = 1.690.000 ÷ 24):** **~70.416 votos** (1 cadeira direta)
-* **Teto por Cadeira:**
-  * **1 Cadeira:** ~70.416 votos
-  * **2 Cadeiras:** ~140.832 votos
-  * **3 Cadeiras:** ~211.248 votos
-  * **4 Cadeiras:** ~281.664 votos *(historicamente quase inatingível no DF para distrital)*
-
-#### A Trava Legal das Sobras (Art. 109 do Código Eleitoral):
-Para disputar as sobras:
-1. **O partido precisa atingir 80% do QE** = **56.333 votos**.
-2. **O candidato precisa atingir 20% do QE de votos individuais** = **14.083 votos**.
-> **O corte de Daniel Radar, Del. Laércio, Pablo Aguiar e outros:** Candidatos de cauda de partidos médios com 4 a 7 mil votos **não batem a cláusula de 14.083 votos**. Portanto, mesmo que o partido tenha sobra teórica, o candidato **está barrado pela lei eleitoral**. A vaga volta para quem tem chapa e candidato com mais de 14,1 mil votos.
 
 ---
 
@@ -958,3 +1205,7 @@ Para disputar as sobras:
 | **Hermeto** | MDB | **~19.000** | 🔴 Suplência / Risco Alto | O MDB projeta apenas 2 cadeiras diretas (Jaqueline e Wellington). Hermeto corre sério risco de perder o mandato. |
 | **Iolando** | MDB | **~16.000** | 🔴 Fora / Suplência | 4º do MDB; fica muito atrás na fila interna da chapa. |
 | **Daniel Radar / Del. Laércio / Del. Pablo Aguiar** | AVANTE / PSD | **4.000 a 7.000** | 🔴 Bloqueados por Lei | **Não atingem a cláusula de barreira individual de 20% do QE (~14.083 votos)**, sendo juridicamente impedidos de assumir vaga de sobra. | de sobra. |
+
+
+
+
